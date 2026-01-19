@@ -1,1 +1,2 @@
-# smallcableboi.github.io
+# smallcableboi's portfolio
+itch.io: https://smallcableboi.itch.io
