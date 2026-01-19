@@ -1,5 +1,15 @@
-# Where things are
-source              : .
+lsi: false
+safe: true
+source: [your repo's top level directory]
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+
 destination         : ./_site
 collections_dir     : .
 plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
@@ -12,8 +22,6 @@ collections:
   posts:
     output          : true
 
-# Handling Reading
-safe                : false
 include             : [".htaccess"]
 exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
 keep_files          : [".git", ".svn"]
@@ -29,15 +37,11 @@ unpublished         : false
 
 # Plugins
 whitelist           : []
-remote_theme: pages-themes/midnight@v0.2.0
-plugins              : [jekyll-remote-theme]
+plugins              : []
 
 # Conversion
 markdown            : kramdown
-highlighter         : rouge
-lsi                 : false
 excerpt_separator   : "\n\n"
-incremental         : false
 
 # Serving
 detach              : false
